@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+
+*{
+    font-family: 'Poppins';
+}
+
+
+:root{
+    --purple:hsl(259, 100%, 65%);
+    --Light-red: hsl(39, 100%, 67%);
+    --White: hsl(160, 66%, 72%);
+    --Off-white: hsl(162, 92%, 47%);
+    --Light-grey: hsl(0, 66%, 58%);
+    --Smokey-grey: hsl(0, 59%, 68%);
+    --Off-black: hsl(0, 0%, 8%);
+
+}
+
+body{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(var(--Light-red),var(--Smokey-grey));
+}
+
+#heading {
+    color: white;
+    background: linear-gradient(var(--White),var(--Off-white));
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+.container{
+   
+    background: linear-gradient(var(--White),var(--Off-white));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:55%;
+    border-radius: 20px 20px 100px 20px;
+    border: none;
+}
+
+
+.inputs{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-left: 8%;
+    margin-top: 2%;
+    
+}
+.input label{
+    color: darkmagenta;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+input{
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid var(--Light-grey);
+    outline-color: var(--purple);
+}
+.input input:hover{
+    border: 1px solid var(--purple);
+    cursor: pointer;
+} 
+/* .input input:focus{
+    outline-color: var(--purple);
+    
+}  */
+
+.button{ 
+   
+    background-color: var(--purple);
+    border-radius: 50%;
+    border: none;
+    transition: all 0.5s linear;
+
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: var(--Off-black);
+}
+.button:active{
+    transform: scale(0.8);
+}
+.btn{
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+.btn hr{
+    width: 100%;
+}
+
+.result{
+    width: 100%;
+    margin-left: 20%;
+
+    
+}
+.result h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(45, 7, 7);
+}
+
+
+.--{
+    color: darkmagenta;
+}
+
+@media  screen and (max-width:767px) {
+    
+    .container{
+   
+        
+        width: 80%;
+        
+    }
+
+}
+
+@media  screen and (max-width:375px) {
+    
+    .container{
+   
+        
+        width: 100%;
+        
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+}
